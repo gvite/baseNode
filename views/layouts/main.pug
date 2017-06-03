@@ -1,0 +1,21 @@
+doctype html
+html(lang="es")
+    head
+        title="Carnal Epitaph" + ((title !== '') ? " | " + title: "")
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(href="css/compile/bootstrap.min.css" rel="stylesheet")
+        link(href="css/vendor/font-awesome.min.css" rel="stylesheet")
+        link(href="css/default.min.css" rel="stylesheet")
+        link(rel="shortcut icon" type="image/ico" href="images/favicon.ico")
+        block stylesheet
+    body
+        include mainMenu.pug
+        div(class="container-fluid" id="body-content")
+            block content
+        div.line-clean
+        include mainFooter.pug
+        script(src="js/vendor/jquery-3.1.1.min.js")
+        script(src="js/vendor/bootstrap.min.js")
+        script(src="js/default.js")
+        block scripts
