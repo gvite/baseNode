@@ -8,7 +8,7 @@ module.exports = function (config) {
 
     db.on('error', console.error.bind(console, 'connection error...'));
     db.once('open', function callback() {
-        console.log('Nissan API db opened');
+        console.log('API db opened');
         userModel.createDefaultUsers();
     });
 };

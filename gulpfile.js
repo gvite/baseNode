@@ -2,6 +2,11 @@
  * Created by @gflores
  */
 //Gulp, more information at http://gulpjs.com/
+
+var env = process.env.NODE_ENV = process.env.NODE_ENV || 'development';
+// get our config file
+var config = require('./config/config')[env];
+
 var gulp = require('gulp'),
     nodemon = require('gulp-nodemon');
 
@@ -12,7 +17,7 @@ gulp.task('default', function () {
         script: 'app.js',
         ext: 'js',
         env: {
-            PORT: 5000
+            PORT: config.port
         },
         ignore: ['./node_modules/**','./sass/**']
     })
