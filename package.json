@@ -26,7 +26,8 @@
     "jsonwebtoken": "^7.4.1",
     "moment": "^2.18.1",
     "mongoose": "^4.10.4",
-    "mongoose-pagination": "^1.0.0"
+    "mongoose-pagination": "^1.0.0",
+    "pug": "^2.0.0-beta11"
   },
   "devDependencies": {
     "gulp-sass": "^3.1.0"

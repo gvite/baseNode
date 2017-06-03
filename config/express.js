@@ -42,6 +42,6 @@ module.exports = function (app, config) {
     app.use('/api/user',jwt.validate, userRouter);
 
     app.use('/', function (req, res) {
-        res.status(200).render('index' , data);
+        res.status(200).render('index');
     });
 };
